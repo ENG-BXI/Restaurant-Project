@@ -1,6 +1,7 @@
 import './../globals.css';
 import localFont from 'next/font/local';
-import Header from './Sections/Header';
+import Header from './_Components/Header';
+import Footer from './_Components/Footer';
 
 const cairoFont = localFont({src: './../../public/Assets/Fonts/Cairo-VariableFont_slnt,wght.ttf'});
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
       <body className={`bg-linear-to-b from-[#09020D] to-[#060606] text-white h-screen ${cairoFont.className}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
