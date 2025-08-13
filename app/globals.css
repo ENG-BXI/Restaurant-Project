@@ -12,6 +12,7 @@
     --color-primary-Normal-hover: #0E0413;
     --color-primary-Normal-hover: #0E0413;
     --color-primary-Normal: #0F0415;
+    --color-primary-Normal-Toggle: #170720;
     --color-primary-Light-active: #B5B1B6;
     --color-primary-Light-hover: #DBD9DC;
     --color-primary-Light: #E7E6E8;
@@ -167,6 +168,26 @@ html {
 
 .section__title {
     @apply text-second-Normal text-M-h3 sm:text-D-h4 text-center mb-10;
+}
+
+.dashboard .section__title {
+    @apply text-start! font-bold text-M-h2 sm:text-D-h4 mb-7!;
+}
+
+.dashboard label {
+    @apply text-second-Normal text-xl mb-4
+}
+
+.dashboard input, .dashboard textarea {
+    @apply max-w-100 h-8! text-primary bg-second-Normal rounded-3xl border-0 focus:border-primary
+}
+
+.dashboard textarea {
+    @apply max-w-full! min-w-auto mx-auto h-auto! min-h-40 overflow-visible
+}
+
+.dashboard .side-bar-item.active {
+    @apply border
 }
 
 footer div a {

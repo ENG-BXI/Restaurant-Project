@@ -1,14 +1,14 @@
 import CustomButton from '@/app/Components/CustomButton';
+import CustomInput from '@/app/Components/CustomInput';
 import PrimaryButton from '@/app/Components/PrimaryButton';
-import {Button} from '@/app/Components/ShadCn/button';
-import {Input} from '@/app/Components/ShadCn/input';
+
 
 const SearchAndSort = () => {
   return (
     <section className='container mx-auto mt-5'>
       <div className='flex gap-x-3 items-center mb-5'>
         <span className='section__title mb-0!'>بحث</span>
-        <Input className='w-100 text-primary bg-second-Normal rounded-3xl border-0 focus:border-primary' />
+        <CustomInput />
         <PrimaryButton>بحث</PrimaryButton>
       </div>
       <div className='flex gap-x-3 overflow-auto'>
