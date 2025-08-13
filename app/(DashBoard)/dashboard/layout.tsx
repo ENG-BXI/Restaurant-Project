@@ -2,8 +2,11 @@ import './../../globals.css';
 import {ReactNode} from 'react';
 import localFont from 'next/font/local';
 import SideBar from './Components/SideBar';
+import {Metadata} from 'next';
 const cairoFont = localFont({src: './../../../public/Assets/Fonts/Cairo-VariableFont_slnt,wght.ttf'});
-
+export const metadata: Metadata = {
+  icons: './Assets/Images/logo.svg'
+};
 const layout = ({children}: {children: ReactNode}) => {
   return (
     <html lang='en' dir='rtl'>
