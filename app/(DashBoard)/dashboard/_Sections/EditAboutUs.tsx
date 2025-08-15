@@ -1,5 +1,5 @@
 import {Label} from '@/app/Components/ShadCn/label';
-import UploadImage from '../Components/UploadImage';
+import UploadImage from '../_Components/UploadImage';
 import {Textarea} from '@/app/Components/ShadCn/textarea';
 
 const EditAboutUs = () => {

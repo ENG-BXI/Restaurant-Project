@@ -1,7 +1,7 @@
 import {Input} from '@/app/Components/ShadCn/input';
 import {Label} from '@/app/Components/ShadCn/label';
 import React from 'react';
-import UploadImage from '../Components/UploadImage';
+import UploadImage from '../_Components/UploadImage';
 
 const EditHero = () => {
   return (

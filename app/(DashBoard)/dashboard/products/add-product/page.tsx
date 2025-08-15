@@ -2,14 +2,14 @@ import {Input} from '@/app/Components/ShadCn/input';
 import {Label} from '@/app/Components/ShadCn/label';
 import {Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue} from '@/app/Components/ShadCn/select';
 import {Textarea} from '@/app/Components/ShadCn/textarea';
-import UploadImage from '../../Components/UploadImage';
+import UploadImage from '../../_Components/UploadImage';
 import PrimaryButton from '@/app/Components/PrimaryButton';
 
 const page = () => {
   return (
     <section>
       <h2 className='text-M-h2 text-second-Normal font-bold mb-5'>اضافة منتج جديد</h2>
-      <div className='flex gap-x-3 w-full item-center mb-10'>
+      <div className='flex flex-col gap-3 md:flex-row justify-between md:items-center mb-10'>
         <div className='w-full'>
           <Label>اسم المنتج</Label>
           <Input />
@@ -23,10 +23,10 @@ const page = () => {
         <Label>تفاصيل المنتج</Label>
         <Textarea />
       </div>
-      <div className=' w-full mb-10'>
+      <div className='w-full mb-10'>
         <Label>تفاصيل المنتج</Label>
         <Select>
-          <SelectTrigger className='dark flex-row-reverse bg-second-Normal text-primary-Normal! min-w-100'>
+          <SelectTrigger className='dark flex-row-reverse bg-second-Normal text-primary-Normal! max-w-100 w-full'>
             <SelectValue placeholder='اختر الصنف' />
           </SelectTrigger>
           <SelectContent className='dark'>

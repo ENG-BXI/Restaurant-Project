@@ -9,7 +9,7 @@ function UploadImage() {
       onClick={() => {
         ref.current?.click();
       }}
-      className='cursor-pointer bg-second-Normal rounded-3xl w-[calc(100%-5rem)] mx-auto h-80 flex flex-col gap-y-3 justify-center items-center'
+      className='cursor-pointer bg-second-Normal rounded-3xl w-full sm:w-[calc(100%-5rem)] mx-auto h-80 flex flex-col gap-y-3 justify-center items-center'
     >
       <div className='bg-primary-Normal w-20 h-20 rounded-full flex justify-center items-center'>
         <Camera className='w-10 h-10 fill-second-Normal text-primary-Normal ' />

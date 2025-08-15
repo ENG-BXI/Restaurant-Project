@@ -1,7 +1,7 @@
 import {Label} from '@/app/Components/ShadCn/label';
 import {Textarea} from '@/app/Components/ShadCn/textarea';
 import React from 'react';
-import UploadImage from '../Components/UploadImage';
+import UploadImage from '../_Components/UploadImage';
 import {Input} from '@/app/Components/ShadCn/input';
 
 const EditWhyUS = () => {
