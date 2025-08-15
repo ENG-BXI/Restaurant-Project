@@ -1,10 +1,24 @@
 import PrimaryButton from '@/app/Components/PrimaryButton';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import * as motion from 'motion/react-client';
+import {Variants} from 'motion';
+const Variant: Variants = {
+  start: {
+    y: '20%',
+    opacity: 0
+  },
+  end: {
+    y: 0,
+    opacity: 1,
+    transition: {
+     
+    }
+  }
+};
 function ProductItem() {
   return (
-    <div className='flex flex-col  bg-[#0E0413] p-2 rounded-3xl max-w-[300px] border border-transparent duration-500 hover:border-second-Normal group'>
+    <motion.div variants={Variant} viewport={{once: true}} className='flex flex-col  bg-[#0E0413] p-2 rounded-3xl max-w-[300px] border border-transparent duration-500 hover:border-second-Normal group'>
       <div className='h-full w-full rounded-4xl overflow-hidden'>
         <Image className='mx-auto object-fill group-hover:scale-110 duration-500' src='./../Assets/Images/ProductImage.svg' height={300} width={300} alt='Product Image' />
       </div>
@@ -17,7 +31,7 @@ function ProductItem() {
           <PrimaryButton>تفاصيل</PrimaryButton>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

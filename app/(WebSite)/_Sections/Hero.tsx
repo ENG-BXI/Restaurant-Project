@@ -1,10 +1,25 @@
 import PrimaryButton from '@/app/Components/PrimaryButton';
+import {Variants} from 'motion';
+import * as motion from 'motion/react-client';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero = () => {
+  const Variant: Variants = {
+    start: {
+      y: -50,
+      opacity: 0
+    },
+    end: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.2
+      }
+    }
+  };
   return (
-    <section className='flex flex-col items-center text-center container mx-auto'>
+    <motion.section variants={Variant} initial='start' animate='end' className='flex flex-col items-center text-center container mx-auto'>
       <div className='my-10'>
         <h1 className='text-M-h1 sm:text-D-h3'>
           من أول لقمة
@@ -16,7 +31,7 @@ const Hero = () => {
         </Link>
       </div>
       <Image src='./Assets/Images/HeroImage.svg' height={200} width={800} alt='Hero Image' />
-    </section>
+    </motion.section>
   );
 };
 
