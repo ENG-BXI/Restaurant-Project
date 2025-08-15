@@ -10,10 +10,7 @@ const Variant: Variants = {
   },
   end: {
     y: 0,
-    opacity: 1,
-    transition: {
-     
-    }
+    opacity: 1
   }
 };
 function ProductItem() {
