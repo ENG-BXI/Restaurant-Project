@@ -14,7 +14,7 @@ const AboutUs = () => {
       transition: {
         duration: 1,
         delay: 0.2,
-        ease: 'linear'
+        ease: 'easeOut'
       }
     }
   };
@@ -29,7 +29,7 @@ const AboutUs = () => {
       transition: {
         duration: 1,
         delay: 0.2,
-        ease: 'linear'
+        ease: 'easeOut'
       }
     }
   };
@@ -43,7 +43,7 @@ const AboutUs = () => {
           <br /> &quot;أطلق جوعك، ودع الباقي علينا.&quot;
         </motion.p>
         <motion.div variants={VariantLeft} initial='start' whileInView='end' viewport={{once: true}} className='aspect-square md:aspect-[1/2] md:max-h-[800px] md:w-1/2 overflow-hidden'>
-          <Image className='rounded-2xl h-full object-cover' src='./Assets/Images/AboutUsImage_D.svg' height={800} width={800} alt='About Us Image' />
+          <Image className='rounded-2xl h-full object-cover' src='/Assets/Images/AboutUsImage_D.png' height={800} width={800} alt='About Us Image' />
         </motion.div>
       </div>
     </section>

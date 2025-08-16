@@ -20,7 +20,7 @@ function ProductItem() {
   return (
     <motion.div variants={Variant} viewport={{once: true}} className='flex flex-col  bg-[#0E0413] p-2 rounded-3xl max-w-[300px] border border-transparent duration-500 hover:border-second-Normal group'>
       <div className='h-full w-full rounded-4xl overflow-hidden'>
-        <Image className='mx-auto object-fill group-hover:scale-110 duration-500' src='./../Assets/Images/ProductImage.svg' height={300} width={300} alt='Product Image' />
+        <Image className='mx-auto object-fill group-hover:scale-110 duration-500' src='/Assets/Images/ProductImage.png' height={300} width={300} alt='Product Image' />
       </div>
       <h5 className='text-D-h5 my-3 '>المشاوي النارية</h5>
       <p className='text-D-p font-light'>لحم بلدي متبل بتتبيلة سرية، مشوي على الفحم، يُقدم مع خبز الطابون وصلصة طحينية مميزة.</p>

@@ -52,7 +52,7 @@ const WhyUs = () => {
           </CustomCard>
         </motion.div>
         <motion.div variants={VariantLeft} initial='start' whileInView='end' viewport={{once: true}} className='max-h-[600px] w-full md:w-1/2 aspect-square md:aspect-[1/2] overflow-hidden '>
-          <Image className='mx-auto h-full w-full object-cover rounded-3xl' src='./Assets/Images/WhyUsImage.svg' height={200} width={500} alt='WhyUsImage' />
+          <Image className='mx-auto h-full w-full object-cover rounded-3xl' src='/Assets/Images/WhyUsImage.png' height={200} width={500} alt='WhyUsImage' />
         </motion.div>
       </div>
     </section>

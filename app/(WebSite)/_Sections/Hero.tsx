@@ -14,7 +14,7 @@ const Hero = () => {
       y: 0,
       opacity: 1,
       transition: {
-        ease: 'linear',
+        ease: 'easeOut',
         duration: 1.2
       }
     }
@@ -31,7 +31,7 @@ const Hero = () => {
           <PrimaryButton>شاهد قائمتنا</PrimaryButton>
         </Link>
       </div>
-      <Image src='./Assets/Images/HeroImage.svg' height={200} width={800} alt='Hero Image' />
+      <Image src='/Assets/Images/HeroImage.png' height={200} width={800} alt='Hero Image' />
     </motion.section>
   );
 };
