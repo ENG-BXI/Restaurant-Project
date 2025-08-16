@@ -37,7 +37,7 @@ const Hero = () => {
     <section className='container overflow-x-hidden! mx-auto'>
       <div className='flex flex-col lg:flex-row justify-center gap-x-[150px] gap-y-2 items-center'>
         <motion.div variants={VariantLeft} initial='start' animate='end' viewport={{once: true}} className='aspect-video lg:aspect-square lg:order-2 w-full lg:w-1/3 overflow-hidden'>
-          <Image className='object-cover h-full w-full' src='./../Assets/Images/HeroProductImage.svg' width={500} height={500} alt='Hero Image' />
+          <Image className='object-cover h-full w-full' src='/Assets/Images/HeroProductImage.png' width={500} height={500} alt='Hero Image' />
         </motion.div>
         <motion.div variants={VariantRight} initial='start' animate='end' viewport={{once: true}} className='flex flex-col lg:order-1 gap-y-3 lg:gap-y-8 lg:w-1/3'>
           <h1 className='text-M-h2 lg:text-D-h3'>كباب نَهم الملوكي</h1>
