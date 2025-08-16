@@ -14,6 +14,7 @@ const Hero = () => {
       y: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
         duration: 1.2
       }
     }

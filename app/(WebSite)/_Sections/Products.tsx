@@ -14,6 +14,7 @@ const Products = () => {
       y: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
         staggerChildren: 0.7
       }
     }

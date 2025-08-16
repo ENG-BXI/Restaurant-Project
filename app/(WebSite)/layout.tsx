@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' dir='rtl'>
-      <body className={`bg-linear-to-b overflow-x-hidden! from-[#09020D] to-[#060606] text-white min-h-screen ${cairoFont.className}`}>
+      <body className={`bg-linear-to-b relative overflow-x-hidden! from-[#09020D] to-[#060606] text-white min-h-screen ${cairoFont.className}`}>
         <Header />
         {children}
         <Footer />

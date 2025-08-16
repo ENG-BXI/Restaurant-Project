@@ -12,7 +12,8 @@ const ContentUs = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1
+        duration: 1,
+        ease: 'linear'
       }
     }
   };
@@ -25,12 +26,13 @@ const ContentUs = () => {
       x: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
         duration: 1
       }
     }
   };
   return (
-    <section id='ContentUs' className='mt-15 container mx-auto'>
+    <section id='ContentUs' className='mt-15 overflow-x-hidden! container mx-auto'>
       <h2 className='section__title'>تواصل معنا</h2>
       <div className='flex flex-col md:flex-row md:justify-between gap-10 items-center text-center bg-second-Normal rounded-4xl text-primary w-full mx-auto p-4 pt-5 '>
         <motion.div variants={VariantRight} initial='start' whileInView='end' viewport={{once: true}} className='md:w-1/2'>

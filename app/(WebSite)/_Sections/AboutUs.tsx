@@ -13,7 +13,8 @@ const AboutUs = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        delay: 0.3
+        delay: 0.2,
+        ease: 'linear'
       }
     }
   };
@@ -27,12 +28,13 @@ const AboutUs = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        delay: 0.3
+        delay: 0.2,
+        ease: 'linear'
       }
     }
   };
   return (
-    <section id='AboutUs' className='container mx-auto mt-10'>
+    <section id='AboutUs' className='container overflow-x-hidden! mx-auto mt-10'>
       <h2 className='section__title'>من نحن ؟</h2>
       <div className='max-w-[900px] mx-auto  flex flex-col md:flex-row md:items-start md:text-start gap-10 items-center text-center mt-5 '>
         <motion.p variants={VariantRight} initial='start' whileInView='end' viewport={{once: true}} className='md:text-D-h5 md:pt-5 md:w-1/2'>

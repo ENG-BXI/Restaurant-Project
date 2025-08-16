@@ -11,6 +11,8 @@ const WhyUs = () => {
     end: {
       opacity: 1,
       transition: {
+        ease: 'linear',
+
         staggerChildren: 0.5
       }
     }
@@ -24,13 +26,15 @@ const WhyUs = () => {
       x: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
+
         duration: 1
       }
     }
   };
 
   return (
-    <section id='WhyUs' className='mt-15 container mx-auto'>
+    <section id='WhyUs' className='mt-15 container overflow-x-hidden! mx-auto'>
       <h2 className='section__title mb-10'>لماذا نحن ؟</h2>
       <div className='max-w-[900px] flex flex-col items-center mx-auto md:items-stretch md:flex-row md:justify-center gap-5 '>
         <motion.div variants={VariantRight} initial='start' whileInView='end' viewport={{once: true}} className='flex md:flex-col items-center justify-center md:w-1/2 gap-3 flex-wrap my-10'>

@@ -13,6 +13,8 @@ const CustomerReviews = () => {
       x: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
+
         duration: 1
       }
     }
@@ -26,12 +28,14 @@ const CustomerReviews = () => {
       x: 0,
       opacity: 1,
       transition: {
+        ease: 'linear',
+
         duration: 1
       }
     }
   };
   return (
-    <section id='CustomerReviews' className='mt-15 container mx-auto'>
+    <section id='CustomerReviews' className='mt-15 container overflow-x-hidden! mx-auto'>
       <h2 className='section__title mb-10'>اراء عملائنا</h2>
       <motion.div variants={VariantRight} initial='start' whileInView='end' viewport={{once: true}} className='flex justify-center gap-3 overflow-x-auto mb-4'>
         <CustomCard className='min-w-80!'>

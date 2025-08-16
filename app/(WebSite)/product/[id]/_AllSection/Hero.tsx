@@ -13,6 +13,7 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 1,
+        ease: 'linear',
         delay: 0.3
       }
     }
@@ -27,12 +28,13 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 1,
+        ease: 'linear',
         delay: 0.3
       }
     }
   };
   return (
-    <section className='container mx-auto'>
+    <section className='container overflow-x-hidden! mx-auto'>
       <div className='flex flex-col lg:flex-row justify-center gap-x-[150px] gap-y-2 items-center'>
         <motion.div variants={VariantLeft} initial='start' animate='end' viewport={{once: true}} className='aspect-video lg:aspect-square lg:order-2 w-full lg:w-1/3 overflow-hidden'>
           <Image className='object-cover h-full w-full' src='./../Assets/Images/HeroProductImage.svg' width={500} height={500} alt='Hero Image' />

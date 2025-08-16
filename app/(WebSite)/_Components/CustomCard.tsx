@@ -10,7 +10,10 @@ function CustomCard({children, className}: {children: ReactNode; className?: str
     },
     end: {
       x: 0,
-      opacity: 1
+      opacity: 1,
+      transition: {
+        ease: 'linear'
+      }
     }
   };
   return (

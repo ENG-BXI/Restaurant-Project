@@ -12,9 +12,7 @@ const AllProduct = () => {
     end: {
       y: 0,
       opacity: 1,
-      transition: {
-        staggerChildren: 0.4
-      }
+      transition: {ease: 'linear', staggerChildren: 0.4}
     }
   };
   return (
