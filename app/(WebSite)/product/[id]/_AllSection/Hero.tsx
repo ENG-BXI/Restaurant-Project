@@ -35,7 +35,7 @@ const Hero = () => {
   };
   return (
     <section className='container overflow-x-hidden! mx-auto'>
-      <div className='flex flex-col lg:flex-row justify-center gap-x-[150px] gap-y-2 items-center'>
+      <div className='flex flex-col overflow-y-hidden lg:flex-row justify-center gap-x-[150px] gap-y-2 items-center'>
         <motion.div variants={VariantLeft} initial='start' animate='end' viewport={{once: true}} className='aspect-video lg:aspect-square lg:order-2 w-full lg:w-1/3 overflow-hidden'>
           <Image className='object-cover h-full w-full' src='/Assets/Images/HeroProductImage.png' width={500} height={500} alt='Hero Image' />
         </motion.div>
